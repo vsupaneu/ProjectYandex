@@ -1,0 +1,31 @@
+package yandexTests;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import yandexDiskMethods.diskMethods.createItem.CreateFileAndCheckCreation;
+import yandexDiskMethods.diskMethods.createItem.CreateFolderAndCheckCreation;
+import yandexDiskMethods.diskMethods.deleteItem.DeleteItemAndEnsureMovedToTrash;
+import yandexDiskMethods.trashMethods.removeFromTrash.RestoreItemFromTrashAndEnsureMovedToDisk;
+import yandexDiskMethods.utilityMethods.BuildItemPathWithFile;
+import yandexDiskMethods.utilityMethods.GetRandomName;
+
+public class TestMoveToTrashAndRestoreFolderWithFile {
+    @Test(description = "Create folder and file within. Move file to trash and restore back.")
+    @Severity(SeverityLevel.MINOR)
+    @Description("1. Создать папку на яндекс диске\n2. Внутри созданной папки создать файл\n3. Поместить созданный файл в корзину\n4. Восстановить созданный файл из корзины\n5. Удалить файл и папку")
+    public void moveToTrashAndRestoreFolderWithFile() {
+        String folder1 = GetRandomName.getRandomFolderName();
+        String file1 = GetRandomName.getRandomFileName("png");
+        String file1Path = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1);
+
+        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), 200);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), 200);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
+        Assert.assertEquals(RestoreItemFromTrashAndEnsureMovedToDisk.restoreItemFromTrashAndEnsureMovedToDisk(file1Path, file1),200);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), 200);
+    }
+}

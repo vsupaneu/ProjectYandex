@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ProjectYandexTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="20,009">
+  <properties />
+  
+  
+            <testcase name="embeddedFolders1" time="20,009" classname="yandexTests.TestEmbeddedFolders1" />
+      
+</testsuite>

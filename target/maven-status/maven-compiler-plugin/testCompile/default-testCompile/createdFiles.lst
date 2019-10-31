@@ -1,0 +1,6 @@
+yandexTests\TestCreateFolderWithFileAndDeleteBoth.class
+yandexTests\TestCreateAndDeleteFolder.class
+yandexTests\TestEmbeddedFolders1.class
+yandexTests\TestGetUserDiskInfo.class
+yandexTests\TestMoveToTrashAndRestoreFolderWithFile.class
+yandexTests\TestEmbeddedFolders2.class

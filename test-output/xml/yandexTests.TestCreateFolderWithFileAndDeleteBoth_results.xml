@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ProjectYandexTest"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="27,048">
+  <properties />
+  
+  
+            <testcase name="createFolderWithFileAndDeleteBoth" time="27,048" classname="yandexTests.TestCreateFolderWithFileAndDeleteBoth" />
+      
+</testsuite>
