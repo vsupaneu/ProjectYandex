@@ -32,7 +32,7 @@ public class TestEmbeddedFolders1 {
         Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), HttpStatus.SC_OK);
         Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder2Path), HttpStatus.SC_OK);
        // Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder2Path), HttpStatus.SC_OK);
-        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder2Path), HttpStatus.SC_BAD_GATEWAY);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder2Path), HttpStatus.SC_OK);
         GetItemInfo.checkFolderInfo(amountOfEmbeddedItems, folder1DiskPath, folder1);
         Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), HttpStatus.SC_OK);
         Assert.assertEquals(EnsureItemIsDeleted.ensureItemIsDeleted(folder2Path), HttpStatus.SC_NOT_FOUND);
