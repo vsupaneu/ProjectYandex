@@ -4,6 +4,8 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import java.util.ArrayList;
+
+import org.apache.commons.httpclient.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import yandexDiskMethods.diskMethods.createItem.CreateFolder;
@@ -22,10 +24,10 @@ public class TestCreateAndDeleteFolder {
         list.add(202);
         list.add(204);
 
-        Assert.assertEquals(CreateFolder.createFolder(folder1), 201);
-        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), 200);
+        Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CREATED);
+        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), HttpStatus.SC_OK);
         Assert.assertTrue(list.contains(DeleteFileOrFolder.deleteFileOrFolder(folder1)));
-        Assert.assertEquals(EnsureItemIsInTrash.ensureItemIsInTrash(folder1), 200);
+        Assert.assertEquals(EnsureItemIsInTrash.ensureItemIsInTrash(folder1), HttpStatus.SC_OK);
     }
 }
 

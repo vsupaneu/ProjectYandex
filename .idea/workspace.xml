@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="089ed8e5-e819-4cf5-9194-17362f496025" name="Default Changelist" comment="" />
+    <list default="true" id="089ed8e5-e819-4cf5-9194-17362f496025" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateAndDeleteFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateAndDeleteFolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateFolderWithFileAndDeleteBoth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateFolderWithFileAndDeleteBoth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestGetUserDiskInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestGetUserDiskInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestMoveToTrashAndRestoreFolderWithFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestMoveToTrashAndRestoreFolderWithFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestCreateAndDeleteFolder.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestCreateAndDeleteFolder.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestCreateFolderWithFileAndDeleteBoth.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestCreateFolderWithFileAndDeleteBoth.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestEmbeddedFolders1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestEmbeddedFolders1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestEmbeddedFolders2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestEmbeddedFolders2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestGetUserDiskInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestGetUserDiskInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestMoveToTrashAndRestoreFolderWithFile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-yandexTests.TestMoveToTrashAndRestoreFolderWithFile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/07a72585-aa2b-4078-9653-bfd559968c0e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/1d1b890e-3b01-4b20-b449-e22bc5b3597e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/4feaaa1f-8184-4a8e-b48c-eb1d0b08c5be-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/5e1ec4c2-42d5-4acb-bb48-87e2d066d2cf-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/6d2f431a-4946-436e-809d-8f15f91ea90e-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/6f925ab1-b332-4537-a540-8acbf8367ff4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/980d2d1f-be5c-4337-bc1a-c0bc73b9a67b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/a3f71c70-992d-4257-9ffa-46ad288e5aa0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/a9d45656-c436-4245-b3c7-d926aca6c156-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/b37d79e2-2cbf-4910-9f29-6b06972069a5-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/b4e039d3-5bb7-4b36-a61a-cdca38cc7f19-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/cd90546a-42d6-42f5-9a33-e83ba1eea03c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/d6ce2417-9d0f-4983-8286-046a42cbe8bf-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/target/allure-results/f56cb4b1-a902-4e69-b3c4-b066c79c50f4-container.json" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +54,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SxVezXGRgfjUYdEhUGau60zUOO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="C:/jars/velocity-dep-1.4.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -64,5 +108,16 @@
       <updated>1572505332933</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

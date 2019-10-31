@@ -3,6 +3,7 @@ package yandexTests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.apache.commons.httpclient.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import yandexDiskMethods.diskMethods.createItem.CreateFileAndCheckCreation;
@@ -21,11 +22,11 @@ public class TestMoveToTrashAndRestoreFolderWithFile {
         String file1 = GetRandomName.getRandomFileName("png");
         String file1Path = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1);
 
-        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), 200);
-        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
-        Assert.assertEquals(RestoreItemFromTrashAndEnsureMovedToDisk.restoreItemFromTrashAndEnsureMovedToDisk(file1Path, file1),200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), 200);
+        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), HttpStatus.SC_OK);
+        Assert.assertEquals(RestoreItemFromTrashAndEnsureMovedToDisk.restoreItemFromTrashAndEnsureMovedToDisk(file1Path, file1),HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), HttpStatus.SC_OK);
     }
 }

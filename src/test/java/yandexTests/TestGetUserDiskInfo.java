@@ -3,6 +3,7 @@ package yandexTests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.apache.commons.httpclient.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import yandexDiskMethods.diskMethods.createItem.CreateFileAndCheckCreation;
@@ -26,16 +27,16 @@ public class TestGetUserDiskInfo {
         String file2Path = BuildItemPathWithFile.buildItemPathWithFile(file2, folder1);
 
         int initialTrashSize = GetTrashSize.getTrashSize();
-        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), 200);
-        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), 200);
-        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file2Path, folder1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file2Path, file2), 200);
+        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file2Path, folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file2Path, file2), HttpStatus.SC_OK);
         int sizeOfDeletedFiles = GetSizesOfDeletedFiles.getSizesOfDeletedFiles(file1, file2);
         int finalTrashSize = GetTrashSize.getTrashSize();
         Assert.assertEquals(finalTrashSize, initialTrashSize + sizeOfDeletedFiles);
         Assert.assertEquals(RestoreItemFromTrashAndEnsureMovedToDisk.restoreItemFromTrashAndEnsureMovedToDisk(file1Path, file1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), 200);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), HttpStatus.SC_OK);
     }
 }

@@ -3,6 +3,7 @@ package yandexTests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.apache.commons.httpclient.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import yandexDiskMethods.diskMethods.createItem.CreateFile;
@@ -23,11 +24,11 @@ public class TestCreateFolderWithFileAndDeleteBoth {
         String file1 = GetRandomName.getRandomFileName("jpg");
         String filePath = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1);
 
-        Assert.assertEquals(CreateFolder.createFolder(folder1), 201);
-        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), 200);
-        Assert.assertEquals(CreateFile.createFile(filePath, folder1), 201);
-        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(filePath), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(filePath, file1), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), 200);
+        Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CREATED);
+        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFile.createFile(filePath, folder1), HttpStatus.SC_CREATED);
+        Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(filePath), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(filePath, file1), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), HttpStatus.SC_OK);
     }
 }

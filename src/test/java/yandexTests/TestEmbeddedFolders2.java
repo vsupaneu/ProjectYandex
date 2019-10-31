@@ -3,6 +3,7 @@ package yandexTests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import org.apache.commons.httpclient.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import yandexDiskMethods.diskMethods.createItem.CreateFileAndCheckCreation;
@@ -25,11 +26,11 @@ public class TestEmbeddedFolders2 {
         String folder2Path = BuildItemPath.buildItemPath(folder1, folder2);
         String file1Path = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1, folder2);
 
-        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), 200);
-        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder2Path), 200);
-        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder2Path), 200);
-        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), 200);
-        Assert.assertEquals(ClearTrash.clearTrash(), 202);
+        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder2Path), HttpStatus.SC_OK);
+        Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder2Path), HttpStatus.SC_OK);
+        Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(folder1, folder1), HttpStatus.SC_OK);
+        Assert.assertEquals(ClearTrash.clearTrash(), HttpStatus.SC_ACCEPTED);
         int trashSize = GetTrashSize.getTrashSize();
         Assert.assertEquals(trashSize, 0);
     }
