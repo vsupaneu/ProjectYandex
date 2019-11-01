@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="19,254">
+           time="12,350">
   <properties />
   
   
-            <testcase name="embeddedFolders2" time="19,254" classname="yandexTests.TestEmbeddedFolders2" />
+            <testcase name="embeddedFolders2" time="12,350" classname="yandexTests.TestEmbeddedFolders2" />
       
 </testsuite>

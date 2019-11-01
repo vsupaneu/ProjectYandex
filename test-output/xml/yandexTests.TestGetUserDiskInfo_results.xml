@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="55,952">
+           time="36,555">
   <properties />
   
   
-            <testcase name="getUserDiskInfo" time="55,952" classname="yandexTests.TestGetUserDiskInfo" />
+            <testcase name="getUserDiskInfo" time="36,555" classname="yandexTests.TestGetUserDiskInfo" />
       
 </testsuite>

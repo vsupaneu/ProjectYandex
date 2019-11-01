@@ -12,15 +12,13 @@
 <body>
 <h1>ProjectYandexTest</h1>
 <p>
-  Test duration: 168,107s
+  Test duration: 116,812s
 </p>
 
 
 
-
-
   <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">yandexTests.TestCreateAndDeleteFolder</td>
       </tr>
@@ -30,15 +28,56 @@
                   <span class="description" title="Create and delete folder.">createAndDeleteFolder</span>
       </td>
   <td class="duration">
-    7,989s
+    6,152s
   </td>
   <td class="result">
         
     
         
 
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [409] but found [201]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:97)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:136)<br />
+              org.testng.Assert.assertEquals(Assert.java:118)<br />
+              org.testng.Assert.assertEquals(Assert.java:839)<br />
+              org.testng.Assert.assertEquals(Assert.java:849)<br />
+              yandexTests.TestCreateAndDeleteFolder.createAndDeleteFolder(TestCreateAndDeleteFolder.java:28)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:498)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.util.ArrayList.forEach(ArrayList.java:1257)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:770)<br />
+              org.testng.TestRunner.run(TestRunner.java:591)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:402)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:304)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1102)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1032)<br />
+              org.testng.TestNG.run(TestNG.java:1000)<br />
+              org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:73)<br />
+              org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)<br />
+                </div>
       </td>
 </tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
         <td colspan="3" class="group">yandexTests.TestCreateFolderWithFileAndDeleteBoth</td>
       </tr>
@@ -48,7 +87,7 @@
                   <span class="description" title="Create folder and file within, delete both.">createFolderWithFileAndDeleteBoth</span>
       </td>
   <td class="duration">
-    27,048s
+    20,477s
   </td>
   <td class="result">
         
@@ -66,7 +105,7 @@
                   <span class="description" title="Create folder, embedded folder and file within. Get meta data and delete items.">embeddedFolders1</span>
       </td>
   <td class="duration">
-    20,009s
+    12,533s
   </td>
   <td class="result">
         
@@ -84,7 +123,7 @@
                   <span class="description" title="Create folder, embedded folder and file within. Move items to trash and clear trash.">embeddedFolders2</span>
       </td>
   <td class="duration">
-    19,254s
+    12,350s
   </td>
   <td class="result">
         
@@ -102,7 +141,7 @@
                   <span class="description" title="Move files to trash, get trash size before and after.">getUserDiskInfo</span>
       </td>
   <td class="duration">
-    55,952s
+    36,555s
   </td>
   <td class="result">
         
@@ -120,7 +159,7 @@
                   <span class="description" title="Create folder and file within. Move file to trash and restore back.">moveToTrashAndRestoreFolderWithFile</span>
       </td>
   <td class="duration">
-    37,855s
+    28,745s
   </td>
   <td class="result">
         

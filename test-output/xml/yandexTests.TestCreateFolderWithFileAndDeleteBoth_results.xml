@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="27,048">
+           time="20,477">
   <properties />
   
   
-            <testcase name="createFolderWithFileAndDeleteBoth" time="27,048" classname="yandexTests.TestCreateFolderWithFileAndDeleteBoth" />
+            <testcase name="createFolderWithFileAndDeleteBoth" time="20,477" classname="yandexTests.TestCreateFolderWithFileAndDeleteBoth" />
       
 </testsuite>

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="37,855">
+           time="28,745">
   <properties />
   
   
-            <testcase name="moveToTrashAndRestoreFolderWithFile" time="37,855" classname="yandexTests.TestMoveToTrashAndRestoreFolderWithFile" />
+            <testcase name="moveToTrashAndRestoreFolderWithFile" time="28,745" classname="yandexTests.TestMoveToTrashAndRestoreFolderWithFile" />
       
 </testsuite>
