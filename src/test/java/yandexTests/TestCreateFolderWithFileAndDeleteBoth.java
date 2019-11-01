@@ -23,7 +23,7 @@ public class TestCreateFolderWithFileAndDeleteBoth {
         String folder1 = GetRandomName.getRandomFolderName();
         String file1 = GetRandomName.getRandomFileName("jpg");
         String filePath = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1);
-
+//asdasd
         Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CREATED);
         Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), HttpStatus.SC_OK);
         Assert.assertEquals(CreateFile.createFile(filePath, folder1), HttpStatus.SC_CREATED);

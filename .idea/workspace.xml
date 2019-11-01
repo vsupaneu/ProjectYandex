@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="089ed8e5-e819-4cf5-9194-17362f496025" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestEmbeddedFolders1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateFolderWithFileAndDeleteBoth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestCreateFolderWithFileAndDeleteBoth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yandexTests/TestMoveToTrashAndRestoreFolderWithFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/yandexTests/TestMoveToTrashAndRestoreFolderWithFile.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

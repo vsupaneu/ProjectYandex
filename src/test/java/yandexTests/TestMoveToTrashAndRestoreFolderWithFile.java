@@ -21,7 +21,7 @@ public class TestMoveToTrashAndRestoreFolderWithFile {
         String folder1 = GetRandomName.getRandomFolderName();
         String file1 = GetRandomName.getRandomFileName("png");
         String file1Path = BuildItemPathWithFile.buildItemPathWithFile(file1, folder1);
-//comment to trigger webhook
+
         Assert.assertEquals(CreateFolderAndCheckCreation.createFolderAndCheckCreation(folder1), HttpStatus.SC_OK);
         Assert.assertEquals(CreateFileAndCheckCreation.createFileAndCheckCreation(file1Path, folder1), HttpStatus.SC_OK);
         Assert.assertEquals(DeleteItemAndEnsureMovedToTrash.deleteItemAndEnsureMovedToTrash(file1Path, file1), HttpStatus.SC_OK);
