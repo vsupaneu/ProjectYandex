@@ -24,8 +24,7 @@ public class TestCreateAndDeleteFolder {
         list.add(202);
         list.add(204);
 
-       // Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CREATED);
-        Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CONFLICT);
+        Assert.assertEquals(CreateFolder.createFolder(folder1), HttpStatus.SC_CREATED);
         Assert.assertEquals(EnsureItemCreatedOrRestored.ensureItemCreatedOrRestored(folder1), HttpStatus.SC_OK);
         Assert.assertTrue(list.contains(DeleteFileOrFolder.deleteFileOrFolder(folder1)));
         Assert.assertEquals(EnsureItemIsInTrash.ensureItemIsInTrash(folder1), HttpStatus.SC_OK);
