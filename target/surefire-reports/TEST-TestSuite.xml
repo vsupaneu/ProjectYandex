@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="163.701" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="147.118" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
@@ -62,10 +62,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="createAndDeleteFolder" classname="yandexTests.TestCreateAndDeleteFolder" time="7.777"/>
-  <testcase name="createFolderWithFileAndDeleteBoth" classname="yandexTests.TestCreateFolderWithFileAndDeleteBoth" time="27.98"/>
-  <testcase name="embeddedFolders1" classname="yandexTests.TestEmbeddedFolders1" time="18.668"/>
-  <testcase name="embeddedFolders2" classname="yandexTests.TestEmbeddedFolders2" time="17.749"/>
-  <testcase name="getUserDiskInfo" classname="yandexTests.TestGetUserDiskInfo" time="51.622"/>
-  <testcase name="moveToTrashAndRestoreFolderWithFile" classname="yandexTests.TestMoveToTrashAndRestoreFolderWithFile" time="37.772"/>
+  <testcase name="createAndDeleteFolder" classname="yandexTests.TestCreateAndDeleteFolder" time="12.188"/>
+  <testcase name="createFolderWithFileAndDeleteBoth" classname="yandexTests.TestCreateFolderWithFileAndDeleteBoth" time="26.821"/>
+  <testcase name="embeddedFolders1" classname="yandexTests.TestEmbeddedFolders1" time="19.9"/>
+  <testcase name="embeddedFolders2" classname="yandexTests.TestEmbeddedFolders2" time="18.375"/>
+  <testcase name="getUserDiskInfo" classname="yandexTests.TestGetUserDiskInfo" time="40.528"/>
+  <testcase name="moveToTrashAndRestoreFolderWithFile" classname="yandexTests.TestMoveToTrashAndRestoreFolderWithFile" time="26.462"/>
 </testsuite>

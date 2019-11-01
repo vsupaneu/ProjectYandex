@@ -2,42 +2,42 @@
 <testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="161760" started-at="2019-10-31T13:54:49 MSK" finished-at="2019-10-31T13:57:30 MSK">
+  <suite name="Surefire suite" duration-ms="144563" started-at="2019-11-01T13:56:49 MSK" finished-at="2019-11-01T13:59:13 MSK">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="161760" started-at="2019-10-31T13:54:49 MSK" finished-at="2019-10-31T13:57:30 MSK">
+    <test name="Surefire test" duration-ms="144563" started-at="2019-11-01T13:56:49 MSK" finished-at="2019-11-01T13:59:13 MSK">
       <class name="yandexTests.TestEmbeddedFolders2">
-        <test-method status="PASS" signature="embeddedFolders2()[pri:0, instance:yandexTests.TestEmbeddedFolders2@64dafeed]" name="embeddedFolders2" duration-ms="17749" started-at="2019-10-31T13:55:43 MSK" description="Create folder, embedded folder and file within. Move items to trash and clear trash." finished-at="2019-10-31T13:56:01 MSK">
+        <test-method status="PASS" signature="embeddedFolders2()[pri:0, instance:yandexTests.TestEmbeddedFolders2@47605f2f]" name="embeddedFolders2" duration-ms="18375" started-at="2019-11-01T13:57:48 MSK" description="Create folder, embedded folder and file within. Move items to trash and clear trash." finished-at="2019-11-01T13:58:06 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- embeddedFolders2 -->
       </class> <!-- yandexTests.TestEmbeddedFolders2 -->
       <class name="yandexTests.TestEmbeddedFolders1">
-        <test-method status="PASS" signature="embeddedFolders1()[pri:0, instance:yandexTests.TestEmbeddedFolders1@2c88b9fc]" name="embeddedFolders1" duration-ms="18666" started-at="2019-10-31T13:55:25 MSK" description="Create folder, embedded folder and file within. Get meta data and delete items." finished-at="2019-10-31T13:55:43 MSK">
+        <test-method status="PASS" signature="embeddedFolders1()[pri:0, instance:yandexTests.TestEmbeddedFolders1@388ba540]" name="embeddedFolders1" duration-ms="19900" started-at="2019-11-01T13:57:28 MSK" description="Create folder, embedded folder and file within. Get meta data and delete items." finished-at="2019-11-01T13:57:48 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- embeddedFolders1 -->
       </class> <!-- yandexTests.TestEmbeddedFolders1 -->
-      <class name="yandexTests.TestCreateAndDeleteFolder">
-        <test-method status="PASS" signature="createAndDeleteFolder()[pri:0, instance:yandexTests.TestCreateAndDeleteFolder@295eaa7c]" name="createAndDeleteFolder" duration-ms="7716" started-at="2019-10-31T13:54:49 MSK" description="Create and delete folder." finished-at="2019-10-31T13:54:56 MSK">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAndDeleteFolder -->
-      </class> <!-- yandexTests.TestCreateAndDeleteFolder -->
       <class name="yandexTests.TestMoveToTrashAndRestoreFolderWithFile">
-        <test-method status="PASS" signature="moveToTrashAndRestoreFolderWithFile()[pri:0, instance:yandexTests.TestMoveToTrashAndRestoreFolderWithFile@47605f2f]" name="moveToTrashAndRestoreFolderWithFile" duration-ms="37772" started-at="2019-10-31T13:56:53 MSK" description="Create folder and file within. Move file to trash and restore back." finished-at="2019-10-31T13:57:30 MSK">
+        <test-method status="PASS" signature="moveToTrashAndRestoreFolderWithFile()[pri:0, instance:yandexTests.TestMoveToTrashAndRestoreFolderWithFile@1dd0e7c4]" name="moveToTrashAndRestoreFolderWithFile" duration-ms="26461" started-at="2019-11-01T13:58:47 MSK" description="Create folder and file within. Move file to trash and restore back." finished-at="2019-11-01T13:59:13 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- moveToTrashAndRestoreFolderWithFile -->
       </class> <!-- yandexTests.TestMoveToTrashAndRestoreFolderWithFile -->
+      <class name="yandexTests.TestCreateAndDeleteFolder">
+        <test-method status="PASS" signature="createAndDeleteFolder()[pri:0, instance:yandexTests.TestCreateAndDeleteFolder@2c88b9fc]" name="createAndDeleteFolder" duration-ms="11936" started-at="2019-11-01T13:56:49 MSK" description="Create and delete folder." finished-at="2019-11-01T13:57:01 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAndDeleteFolder -->
+      </class> <!-- yandexTests.TestCreateAndDeleteFolder -->
       <class name="yandexTests.TestCreateFolderWithFileAndDeleteBoth">
-        <test-method status="PASS" signature="createFolderWithFileAndDeleteBoth()[pri:0, instance:yandexTests.TestCreateFolderWithFileAndDeleteBoth@3918c187]" name="createFolderWithFileAndDeleteBoth" duration-ms="27988" started-at="2019-10-31T13:54:57 MSK" description="Create folder and file within, delete both." finished-at="2019-10-31T13:55:25 MSK">
+        <test-method status="PASS" signature="createFolderWithFileAndDeleteBoth()[pri:0, instance:yandexTests.TestCreateFolderWithFileAndDeleteBoth@64dafeed]" name="createFolderWithFileAndDeleteBoth" duration-ms="26813" started-at="2019-11-01T13:57:01 MSK" description="Create folder and file within, delete both." finished-at="2019-11-01T13:57:28 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createFolderWithFileAndDeleteBoth -->
       </class> <!-- yandexTests.TestCreateFolderWithFileAndDeleteBoth -->
       <class name="yandexTests.TestGetUserDiskInfo">
-        <test-method status="PASS" signature="getUserDiskInfo()[pri:0, instance:yandexTests.TestGetUserDiskInfo@388ba540]" name="getUserDiskInfo" duration-ms="51621" started-at="2019-10-31T13:56:01 MSK" description="Move files to trash, get trash size before and after." finished-at="2019-10-31T13:56:53 MSK">
+        <test-method status="PASS" signature="getUserDiskInfo()[pri:0, instance:yandexTests.TestGetUserDiskInfo@2ece4966]" name="getUserDiskInfo" duration-ms="40527" started-at="2019-11-01T13:58:06 MSK" description="Move files to trash, get trash size before and after." finished-at="2019-11-01T13:58:47 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserDiskInfo -->
